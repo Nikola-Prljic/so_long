@@ -6,7 +6,7 @@
 /*   By: nprljic <nprljic@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 20:14:55 by nprljic           #+#    #+#             */
-/*   Updated: 2022/12/18 15:41:56 by nprljic          ###   ########.fr       */
+/*   Updated: 2023/04/18 17:38:22 by nprljic          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,9 +78,6 @@ int	ft_move(int keysym, t_data *data)
 
 int	esc_exit(int keysym, t_data *data)
 {
-	int	i;
-
-	i = 0;
 	if (keysym == XK_Escape)
 	{
 		mlx_destroy_window(data->mlx_ptr, data->win_ptr);

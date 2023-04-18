@@ -6,7 +6,7 @@
 /*   By: nprljic <nprljic@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 22:15:10 by nprljic           #+#    #+#             */
-/*   Updated: 2022/12/15 17:15:45 by nprljic          ###   ########.fr       */
+/*   Updated: 2023/04/18 17:38:08 by nprljic          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ char	*ft_mapstr(int fd)
 	char	*buf;
 	char	*remain;
 
+	remain = NULL;
 	buf = malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (!buf)
 		return (NULL);
